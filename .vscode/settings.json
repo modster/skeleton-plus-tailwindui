@@ -2,6 +2,19 @@
 	"prettier.documentSelectors": [
 		"**/*.svelte"
 	],
+	"tailwindCSS.colorDecorators": true,
+	"tailwindCSS.emmetCompletions": true,
+	"tailwindCSS.includeLanguages": {
+		"plaintext": "html"
+	},
+	"editor.quickSuggestions": {
+		"strings": "on"
+	},
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	svelte.enable-ts-plugin
+
 	"tailwindCSS.classAttributes": [
 		"class",
 		"accent",
