@@ -1,20 +1,25 @@
 <script>
-
+	import { T } from '@threlte/core'
     import { LightSwitch } from "@skeletonlabs/skeleton"
+	import { Canvas } from '@threlte/core'
+	import Scene from './Scene.svelte'
+
 
 </script>
+
 <!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
 
-<div class="container h-full mx-auto flex justify-center items-center">
-	<h1 class="text-5xl font-bold mb-5">Hello World</h1>
 	<div class="container h-full mx-auto flex justify-center items-center">
-		<h2 class="h2">Greeffer.com</h2>
+
 		<!-- Animated Logo -->
-		<svg class="w-64 h-64 md:w-80 md:h-80 absolute z-[-1] rounded-full blur-[50px] transition-all animate-pulse">
-			<circle class="bg-primary-400/50" cx="50%" cy="50%" r="50%"></circle>
-		</svg>
-	</div>
-</div>
+
+		  
+		  <Canvas>
+			<Scene />
+		  </Canvas>
+
+		  </div>
+		
 	<style lang="postcss">
 		/* .animate-glow {
 			animation: glow 5s cubic-bezier(0, 0, 0, 0.5) infinite;
@@ -35,9 +40,9 @@
 			}
 		}
 
-		.animate-pulse {
+		/* .animate-pulse {
 			animation: pulse 5s cubic-bezier(0, 0, 0, 0.5) infinite;
-		}
+		} */
 
 		@keyframes pulse {
 			50% {

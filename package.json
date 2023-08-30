@@ -33,6 +33,7 @@
     "@threlte/core": "^6.0.6",
     "@threlte/extras": "^5.4.1",
     "@threlte/theatre": "^2.1.1",
+    "@types/three": "^0.155.1",
     "highlight.js": "11.8.0",
     "three": "^0.155.0"
   }
