@@ -1,6 +1,6 @@
 <script>
 	import { T,Canvas } from '@threlte/core'
-    import { LightSwitch } from "@skeletonlabs/skeleton"
+    // import { LightSwitch } from "@skeletonlabs/skeleton"
 	import Scene from './Scene.svelte'
 </script>
 
