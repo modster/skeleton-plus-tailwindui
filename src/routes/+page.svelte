@@ -1,29 +1,22 @@
 <script>
-	import { T } from '@threlte/core'
+	import { T,Canvas } from '@threlte/core'
     import { LightSwitch } from "@skeletonlabs/skeleton"
-	import { Canvas } from '@threlte/core'
 	import Scene from './Scene.svelte'
-
-
 </script>
 
-<!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
-
 	<div class="container h-full mx-auto flex justify-center items-center">
+		<!-- Threlte -->
+		<Canvas>
 
-		<!-- Animated Logo -->
-
-		  
-		  <Canvas>
 			<Scene />
-		  </Canvas>
 
-		  </div>
+		</Canvas>
+	</div>
 		
 	<style lang="postcss">
-		/* .animate-glow {
+		.animate-glow {
 			animation: glow 5s cubic-bezier(0, 0, 0, 0.5) infinite;
-		} */
+		}
 
 		@keyframes glow {
 			0% {
@@ -40,9 +33,9 @@
 			}
 		}
 
-		/* .animate-pulse {
+		.animate-pulse {
 			animation: pulse 5s cubic-bezier(0, 0, 0, 0.5) infinite;
-		} */
+		}
 
 		@keyframes pulse {
 			50% {
