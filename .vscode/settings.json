@@ -13,8 +13,7 @@
 	"files.associations": {
 		"*.css": "tailwindcss"
 	},
-	svelte.enable-ts-plugin
-
+	"svelte.enable-ts-plugin",
 	"tailwindCSS.classAttributes": [
 		"class",
 		"accent",
