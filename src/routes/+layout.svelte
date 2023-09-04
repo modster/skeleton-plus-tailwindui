@@ -44,14 +44,6 @@
       <svelte:fragment slot="trail">
         <a
           class="btn btn-sm variant-ghost-surface"
-          href="./svx/"
-          target="self"
-          rel="noreferrer"
-        >
-          Svx
-        </a>
-        <a
-          class="btn btn-sm variant-ghost-surface"
           href="./studio"
           target="self"
           rel="noreferrer"
@@ -74,24 +66,17 @@
         >
           GitHub
         </a>
+        <a
+          class="btn btn-sm variant-ghost-surface"
+          href="./blog"
+          target="self"
+          rel="noreferrer"
+        >
+          Blog
+        </a>
         <LightSwitch />
       </svelte:fragment>
     </AppBar>
   </svelte:fragment>
-  <svelte:fragment slot="sidebarLeft">Sidebar Left</svelte:fragment>
-  <Canvas>
-    <T.DirectionalLight position={[0, 10, 10]} />
-    <T.GridHelper />
-    <T.PerspectiveCamera
-      makeDefault
-      position={[5, 5, 5]}
-      on:create={({ ref }) => {
-        ref.lookAt(0, 1, 0);
-      }}
-    >
-      <OrbitControls enableDamping />
-      <!-- <T.PerspectiveCamera makeDefault fov={50}> -->
-    </T.PerspectiveCamera>
-    <slot />
-  </Canvas>
+  <slot />
 </AppShell>
