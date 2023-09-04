@@ -2,11 +2,22 @@
   import { Canvas, T } from "@threlte/core";
   import { SheetObject, Theatre } from "@threlte/theatre";
   import { getProject } from "@theatre/core";
+  import { OrbitControls } from "@threlte/extras";
   import projectState from "./default.theatre-project-state.json";
 
   const project = getProject("My Project", { state: projectState });
 </script>
-
+<Canvas>
+  <T.DirectionalLight position={[0, 10, 10]} />
+  <T.GridHelper />
+  <T.PerspectiveCamera makeDefault position={[5, 5, 5]} on:create={({ ref }) => {
+      ref.lookAt(0, 1, 0);
+    }}
+  >
+    <OrbitControls enableDamping />
+    <!-- <T.PerspectiveCamera makeDefault fov={50}> -->
+  </T.PerspectiveCamera>
+<!-- </Canvas>
 <div>
   <Canvas>
     <Theatre>
@@ -26,10 +37,5 @@
       <T.GridHelper />
     </Theatre>
   </Canvas>
-</div>
+</div> -->
 
-<style lang="postcss">
-  ::shadow-root {
-    @apply absolute top-10;
-  }
-</style>

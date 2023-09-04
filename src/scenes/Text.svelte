@@ -10,6 +10,14 @@
   useFrame(() => {
     rotation += 0.002;
   });
+
+  /** Title
+  //  */
+  // import Scene from "../scenes/Text.svelte"; //<------------ to do
+  // let text_value: string;
+  // text.subscribe((value: string) => {
+  //   text_value = value;
+  // });
 </script>
 
 <T.Group rotation.y={rotation}>
