@@ -1,5 +1,5 @@
 import { join } from "path";
-
+import { myCustomTheme } from "./my-custom-theme";
 import forms from "@tailwindcss/forms";
 import typography from "@tailwindcss/typography";
 import { skeleton } from "@skeletonlabs/tw-plugin";
@@ -21,6 +21,7 @@ export default {
     typography,
     skeleton({
       themes: {
+        custom: [myCustomTheme],
         preset: [
           {
             name: "modern",
