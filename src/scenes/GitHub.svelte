@@ -9,7 +9,7 @@
 
   onMount(async () => {
     const response = await fetch(
-      "https://gh-contributions-api.vercel.app/mattcroat/2022",
+      "https://gh-contributions-api.vercel.app/modster/2022",
     );
     contributions = await response.json();
   });

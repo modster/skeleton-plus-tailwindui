@@ -8,6 +8,7 @@
     ref.lookAt(0, 0, 0);
   }}
 />
+
 <T.Mesh>
   <T.BoxGeometry args={[1, 1, 1]} />
   <T.MeshBasicMaterial color="red" />
