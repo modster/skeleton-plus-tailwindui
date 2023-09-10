@@ -1,10 +1,13 @@
-// import adapter from "@sveltejs/adapter-auto";
+import adapter from "@sveltejs/adapter-auto";
 import { vitePreprocess } from "@sveltejs/kit/vite";
 import { mdsvex } from "mdsvex";
 import mdsvexConfig from "./mdsvex.config.js";
-import adapter from "svelte-adapter-deno";
+// import adapter from '@sveltejs/adapter-vercel';
 
 /** @type {import('@sveltejs/kit').Config} */
+// /** @type {import('@sveltejs/adapter-vercel').Config} */
+runtime: 'edge'
+
 const config = {
   extensions: [".svelte", ".md"],
 
@@ -16,12 +19,7 @@ const config = {
   },
 
   kit: {
-    adapter: adapter({
-      out: "build",
-      precompress: false,
-      envPrefix: "PROD_",
-      deps: "../deps.ts", // (relative to adapter-deno package)
-    }),
+    adapter: adapter(),
   },
 };
 

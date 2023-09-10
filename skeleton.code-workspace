@@ -5,7 +5,7 @@
 		}
 	],
 	"settings": {
-		"deno.enable": true,
+		"deno.enable": false,
 		"deno.lint": true,
 		"deno.unstable": false
 	}
