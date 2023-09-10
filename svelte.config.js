@@ -5,8 +5,6 @@ import mdsvexConfig from "./mdsvex.config.js";
 // import adapter from '@sveltejs/adapter-vercel';
 
 /** @type {import('@sveltejs/kit').Config} */
-// /** @type {import('@sveltejs/adapter-vercel').Config} */
-runtime: 'edge'
 
 const config = {
   extensions: [".svelte", ".md"],
@@ -19,7 +17,7 @@ const config = {
   },
 
   kit: {
-    adapter: adapter(),
+    adapter: adapter()
   },
 };
 
