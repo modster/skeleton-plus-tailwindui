@@ -17,12 +17,11 @@ const config = {
 
   kit: {
     adapter: adapter({
-      out: 'build',
+      out: "build",
       precompress: false,
-      envPrefix: 'PROD_',
-      deps: './deps.ts' // (relative to adapter-deno package)
-    }
-    ),
+      envPrefix: "PROD_",
+      deps: ".,/../deps.ts", // (relative to adapter-deno package)
+    }),
   },
 };
 

@@ -1,5 +1,5 @@
-import { join } from "path";
-import { myCustomTheme } from "./my-custom-theme";
+import { join } from "node:path";
+import { myCustomTheme } from "./my-custom-theme.ts";
 import forms from "@tailwindcss/forms";
 import typography from "@tailwindcss/typography";
 import { skeleton } from "@skeletonlabs/tw-plugin";
