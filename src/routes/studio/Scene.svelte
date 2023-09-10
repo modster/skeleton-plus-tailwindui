@@ -1,15 +1,23 @@
 <script>
-  import { Canvas, T } from "@threlte/core";
+  import { T, useFrame, useThrelteUserContext } from "@threlte/core";
+  import { interactivity, OrbitControls } from "@threlte/extras";
+  import { rotater } from "$lib/rotation";
+  import { scale } from "$lib/spring";
+
+  useFrame((state, delta) => {
+    $rotater += delta;
+  });
+
+  interactivity();
 </script>
 
-<T.PerspectiveCamera
-  position={[10, 10, 10]}
-  on:create={({ ref }) => {
-    ref.lookAt(0, 0, 0);
-  }}
-/>
-
-<T.Mesh>
-  <T.BoxGeometry args={[1, 1, 1]} />
-  <T.MeshBasicMaterial color="red" />
+<T.Mesh
+  rotation.y={$rotater}
+  position.y={1}
+  scale={$scale}
+  on:pointerenter={() => scale.set(1.1)}
+  on:pointerleave={() => scale.set(1)}
+>
+  <T.BoxGeometry args={[1, 2, 1]} />
+  <T.MeshStandardMaterial color="red" />
 </T.Mesh>
