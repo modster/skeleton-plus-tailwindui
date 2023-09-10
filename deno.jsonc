@@ -1,6 +1,0 @@
-{
-  "tasks": {
-    "server": "deno run -A ./build/index.js",
-    "deploy": "deno run -A ./build/index.js"
-  }
-}

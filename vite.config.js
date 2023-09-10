@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [sveltekit(), purgeCss()],
-  server: { port: 8080, host: true },
+  // server: { port: 8080, host: true },
   ssr: {
     noExternal: ["three"],
   },
