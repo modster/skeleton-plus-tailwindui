@@ -52,7 +52,7 @@
         </a>
         <a
           class="btn btn-sm variant-ghost-surface"
-          href="https://twitter.com/SkeletonUI"
+          href="https://twitter.com/goodgreeff"
           target="_blank"
           rel="noreferrer"
         >
@@ -60,19 +60,11 @@
         </a>
         <a
           class="btn btn-sm variant-ghost-surface"
-          href="https://github.com/skeletonlabs/skeleton"
+          href="https://github.com/modster/astro-mdx-shiki"
           target="_blank"
           rel="noreferrer"
         >
           GitHub
-        </a>
-        <a
-          class="btn btn-sm variant-ghost-surface"
-          href="./blog"
-          target="self"
-          rel="noreferrer"
-        >
-          Blog
         </a>
         <LightSwitch />
       </svelte:fragment>
