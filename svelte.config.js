@@ -20,7 +20,7 @@ const config = {
       out: "build",
       precompress: false,
       envPrefix: "PROD_",
-      deps: "../../deps.ts", // (relative to adapter-deno package)
+      deps: "../deps.ts", // (relative to adapter-deno package)
     }),
   },
 };
